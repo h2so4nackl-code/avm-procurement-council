@@ -1,0 +1,60 @@
+[descriptor]
+execution_mode = "message_isolated"
+state_schema_id = "502262cea23d9e69a10d8441526e2d65ec16e3e8fc7e24cb3d36493df0dfc6e6"
+
+[abi]
+state_root_type_id = 1
+
+[[abi.types]]
+id = 1
+kind = "fixed_bytes"
+name = "state"
+len = 160
+
+[[abi.types]]
+id = 2
+kind = "fixed_bytes"
+name = "bytes_1"
+len = 1
+
+[[abi.types]]
+id = 3
+kind = "fixed_bytes"
+name = "bytes_64"
+len = 64
+
+[[abi.types]]
+id = 4
+kind = "fixed_bytes"
+name = "bytes_80"
+len = 80
+
+[[abi.methods]]
+name = "procurement.receiver.deploy"
+
+[[abi.methods]]
+name = "procurement.receiver.bind"
+input_type_id = 3
+
+[[abi.methods]]
+name = "procurement.receiver.reject"
+input_type_id = 2
+
+[[abi.methods]]
+name = "procurement.receiver.receive"
+input_type_id = 4
+
+[[abi.errors]]
+status_code = 3100
+name = "unauthorized"
+message = "unauthorized"
+
+[[abi.errors]]
+status_code = 3101
+name = "invalid_args"
+message = "invalid args"
+
+[[abi.errors]]
+status_code = 3102
+name = "receiver_rejected"
+message = "receiver rejected"

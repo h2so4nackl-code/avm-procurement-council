@@ -1,0 +1,2 @@
+PASS: YAML structure, read-only workflow permissions, 40-character pinned action refs, no repository secrets.
+This is static validation; hosted GitHub Actions has not run.

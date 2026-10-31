@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/gosh-sh/avm-sdk",
+  "commit": "3a33ece89e67e291785f07e84f5b98a00ae85752",
+  "unmodified_files_sha256": {
+    "vendor/avm-contract-sdk/src/lib.rs": "1fbdef66fd98c299001828df37de204e14e31aa11be7279924fdb54e683db42e",
+    "vendor/avm-contract-sdk/src/input.rs": "45f171dbb86d7dba17c1fe3af56bef1ddd374f6273c60852fe18bad0276469ce",
+    "vendor/avm-contract-sdk/src/output.rs": "f98fbe5237782a807c9eab189726c576303d18167963151be02019167cf02b09",
+    "vendor/avm-contract-sdk/src/runtime.rs": "010ee262f71a5210e314be9ae7fdf60be64415e8802a3e5ef5c3cae86bb8f8b6",
+    "tools/release.py": "10fa64d577fd64e3c46dca8ace184c0034e33a673aac2deb15dfe96b79715ac6"
+  }
+}

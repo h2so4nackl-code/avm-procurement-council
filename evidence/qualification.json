@@ -1,0 +1,137 @@
+{
+  "recorded_at_utc": "2026-10-30T23:34:59.966760+00:00",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "rustc": "rustc 1.93.0 (254b59607 2026-01-19)",
+  "sdk_release": "avm-dev-2662a32e7c91-sdk-93e34e16e449",
+  "sdk_archive_sha256": "8735c632dfc6792fe3672eaa9e157fcf9a025a317ffaa1c4e59495531eb1383f",
+  "tools": {
+    "avm-contract-build": "e3dfc2205908d32f33dd3b84f6e3bc371a62ea62bbe31ae2f36decfebc24966f",
+    "avm-local-stand": "83eb8b392fc52e49be1a3cd7f367d5e5425c5ab907901a6bc3110d9a02aa6067"
+  },
+  "profile_sha256": "4cde5300ca5c9f2dd7e6217ec3fea8c59440caf9d90cbfd6bd7d251521f999b1",
+  "source_sha256": {
+    ".github/workflows/qualification.yml": "18917d5431dbaefc0263ad9246ed103865445c8b498aee094d4325699cf34030",
+    ".gitignore": "159e7101f487c735efd40d061c4ca4b94fd50b67cb5d79590a43c7ef6d21116b",
+    "Cargo.lock": "dc6be11f58fea498a2a092d4b4cc0f076c20b0934cd0dfbf2f8e72520e7f4df4",
+    "Cargo.toml": "315a1f5cd27e42dbcfa4c73718953af5433420d04b88d9e9d5ab44910efc9961",
+    "LICENSE": "a44cb76b4c9ec137b77fa95090ae1bacf4409a29f03b8e7a85b528d079be24f3",
+    "README.md": "25d345f083bf6770772fc66bb87e1089c99bff53be5111b83005e39f5b9b5f6b",
+    "START_AICI.md": "1f6951965f4525a7d3e5e920111b35b9a340ed1a04b93a6c360c92dec73666db",
+    "THIRD_PARTY_NOTICES.md": "90555282dc6bd3b882b33a97b480d54b4e7215ca5b2d12157ca3bef73fd51a7c",
+    "UPSTREAM.json": "022f742683ab2a2426cc50ee1b3b2afbf368eb0c213d290e9d5540d39ac953df",
+    "contracts/council/Cargo.toml": "30cd16c571afab48d5ea2ee59cb107020bb8d41d3304a07d658fb87e38d3b177",
+    "contracts/council/avm-contract.toml": "a8aef8153686d4761312adfe436183473f5b3d6ed6f833c001164afea95ec1d2",
+    "contracts/council/src/ids.rs": "f47575192511ead41ccb4c3223409cd44eb510d572f5dc1fbc69d93daf6358bb",
+    "contracts/council/src/lib.rs": "c0c9bee32a433acb58ddcad7548e7b4bb48dd21be076845d8474d0cada490573",
+    "contracts/council/tests/regressions.rs": "c848b7f421ec6088ab7ce4614bc77c81f8a2a4950b8392b419095b78c2e6eb76",
+    "contracts/council/tests/support/mod.rs": "e30ec9db39d97434b7d2b77bb69f3c6dad4e0cbad985800e7a639a4b1f1e12c3",
+    "contracts/receiver/Cargo.toml": "c4bc0f819d71821eecc872733b035d6c496794cb436e6acf3d01263a95c38c14",
+    "contracts/receiver/avm-contract.toml": "98412d2019d835bc3ec185018eaca3eef10f90d7255c9985ead79817d7f20efc",
+    "contracts/receiver/src/lib.rs": "d2bdfc34af2ce721c38e07ac8fdcf77b639a91b1b86b089a5abb4852ee11b9e8",
+    "contracts/receiver/tests/receiver.rs": "1371423cea4b0a2a023bfb59bb540ad068fc75a032a8ce94f109d5eec468931b",
+    "docs/REVIEW.md": "70524ef0deb9bfe72575dcef3f3ddee0e8d3353f43e33d90dfa6916c884284f2",
+    "docs/SDK-INTEGRATION.md": "90a2666a1887a76faf3120b394d5a6dcc7290c327b874cfd81f489fabc8a1fbb",
+    "docs/SPEC.md": "8f8a88c836eb1f8425a95ce4f3299bc1f590b79a33df6263f79ddd119ff64ff8",
+    "licenses/bounty-escrow-LICENSE": "f87f092bf302ec89105a319cddd9992a4b57fc10de6a08728a4d830659b4a19b",
+    "rust-toolchain.toml": "60d3379a390ea2eb3e75f2d0d61050a891a1cdf7ef2bdcc5965dfa87a7ff6337",
+    "scripts/capacity_e2e.py": "c0ebc0a30387277d4e8786b41da112440efcd191197cf7d9a435d16c6374ff95",
+    "scripts/check.sh": "0970974f8c6396014af71e6e2ac0be0332ea342746be7d294f6d702a73308ff2",
+    "scripts/e2e.py": "cb4e61076646352166e4069921b4036d61f5cc7273c49196684eb176342c7cfa",
+    "scripts/encode.py": "43b40295078d102b04414f85f7cc0aeccc16f6229abb4f13c842bc4d3dacafa0",
+    "scripts/generate_abi.py": "3725a37a4c41a8e1fb66b99e4b3901eb3b70b01b2ef5e8a9f876508aa806bed9",
+    "scripts/record_evidence.py": "072c6166bb1064b9cb93f1f045fffaf5fb458ea665be563569666e5638776c41",
+    "scripts/setup_sdk.py": "5ceddc272291804b747c32ed9dddbc77b249651f4c81d9457207d6d78a716882",
+    "scripts/sync_ids.py": "66985733ec0b77d5dcb65095da4bb49de42f1102433d0e91297a0d9730e9fa9d",
+    "scripts/verify_sources.py": "c132eea1c15566d56e3b9170cf0be0fe53aa3aa6b545bae6462b9a4ace0fda9a",
+    "tools/release.py": "10fa64d577fd64e3c46dca8ace184c0034e33a673aac2deb15dfe96b79715ac6",
+    "vendor/avm-contract-sdk/Cargo.toml": "b82d733bb272ea3e389608f6694ef71682c75f98c11449d87c2bcd06e6ee4c97",
+    "vendor/avm-contract-sdk/LICENSE.md": "7a4ad0e41d39f4d14f0cd83cdc8e542d214375aa615daa3d5aa946b9c8aea4fa",
+    "vendor/avm-contract-sdk/src/input.rs": "45f171dbb86d7dba17c1fe3af56bef1ddd374f6273c60852fe18bad0276469ce",
+    "vendor/avm-contract-sdk/src/lib.rs": "1fbdef66fd98c299001828df37de204e14e31aa11be7279924fdb54e683db42e",
+    "vendor/avm-contract-sdk/src/output.rs": "f98fbe5237782a807c9eab189726c576303d18167963151be02019167cf02b09",
+    "vendor/avm-contract-sdk/src/runtime.rs": "010ee262f71a5210e314be9ae7fdf60be64415e8802a3e5ef5c3cae86bb8f8b6"
+  },
+  "artifacts": {
+    "artifacts/council/contract.acab": {
+      "sha256": "9afe1f9993296c7ca7837ec29285ce3275f27cb962e7d4c0ab8ffda15de4caf6",
+      "bytes": 1267
+    },
+    "artifacts/council/contract.descriptor": {
+      "sha256": "9d435ffebf0a9999ee43473fda35cf2677d45ecb664ece1ef7726631b9097025",
+      "bytes": 66
+    },
+    "artifacts/council/contract.wasm": {
+      "sha256": "01f43c457c11d220f4e36297ff8edd0fe3031f9c0a251abd8026502032888d72",
+      "bytes": 60350
+    },
+    "artifacts/receiver/contract.acab": {
+      "sha256": "b0d2fcf779209b821b2aa0559ab560b8419ad445a2667b590ce3d4954a744edb",
+      "bytes": 407
+    },
+    "artifacts/receiver/contract.descriptor": {
+      "sha256": "6c5abead468115d16e5151f48e623176d1a7a37c5a0137e5a125142040be6464",
+      "bytes": 66
+    },
+    "artifacts/receiver/contract.wasm": {
+      "sha256": "52b428cd502453c7a02fa3521b064b9a32844ce6dc0e142e082b923450c176fa",
+      "bytes": 43264
+    }
+  },
+  "native_tests": {
+    "project": 57,
+    "inherited_sdk": 9,
+    "total": 66,
+    "log_sha256": "b824a112be352e74e08f7e0fcadbc800a3681c9d54eb30231e81fcbd8b03795f"
+  },
+  "journeys": {
+    "avm-e2e": {
+      "status": "PASS",
+      "sha256": "65fbaff8071443d21a2c93736faf6033cb0d44c99dcf768413aeede91192c70d",
+      "commands": 58,
+      "accounting": {
+        "deposited": 3000,
+        "spent": 1000,
+        "reserved": 0,
+        "attempts": 4,
+        "paused": false,
+        "orders": 3,
+        "receipts": 4,
+        "pending": false
+      },
+      "replay": {
+        "accepted_input_count": 55,
+        "account_state_root": "ff359cf0cf368678736bac31bc02a87f5cddb31818756fcbd725c68cfffc575a",
+        "command": "replay",
+        "cumulative_fee_shells": "62705346",
+        "receipt_count": 55,
+        "registry_root": "41068db9f3f66f1f89d483aff5b73f4d7c610115cef46ac54c94892c70617e0f",
+        "status": "ok"
+      }
+    },
+    "avm-capacity": {
+      "status": "PASS",
+      "sha256": "6d323ea1f239cbea0f88934c9429fc04c6e32de5ff319fad9eafa8d06da9b0f6",
+      "commands": 98,
+      "accounting": {
+        "deposited": 100,
+        "spent": 1,
+        "reserved": 31,
+        "attempts": 64,
+        "paused": false,
+        "orders": 8,
+        "receipts": 64,
+        "pending": false
+      },
+      "replay": {
+        "accepted_input_count": 215,
+        "account_state_root": "87bab4034710ae846594063e32bdad27bd30d7d563135c6663a62c25e8ac9ed7",
+        "command": "replay",
+        "cumulative_fee_shells": "1431271",
+        "receipt_count": 215,
+        "registry_root": "e6b0f3b9d2a7594b72a31ce91eb92f7a65c5fd2d2eed5093324bdaaaca84b017",
+        "status": "ok"
+      }
+    }
+  },
+  "qualification_scope": "Local Linux x86_64 SDK 0.3.0, synthetic ECC. No mainnet, audit or production qualification claim."
+}

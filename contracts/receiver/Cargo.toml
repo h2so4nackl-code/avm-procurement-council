@@ -1,0 +1,10 @@
+[package]
+name = "avm-procurement-receiver"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+[lib]
+crate-type = ["cdylib", "rlib"]
+[dependencies]
+avm-contract-sdk = { path = "../../vendor/avm-contract-sdk" }
+avm-procurement-council = { path = "../council", default-features = false }

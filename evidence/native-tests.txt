@@ -1,0 +1,115 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running unittests src/lib.rs (target/debug/deps/avm_contract_sdk-82d4ea57941401e9)
+
+running 9 tests
+test runtime::tests::bounded_writer_failures_release_only_the_output_reservation ... ok
+test output::work::checked_sizes_reject_arithmetic_overflow ... ok
+test runtime::tests::batch_dispatch_preserves_count_mode_and_failed_index_checks ... ok
+test runtime::tests::dispatch_failure_capacity_and_overflow_leave_input_owned ... ok
+test runtime::tests::direct_message_sections_and_batch_match_the_public_serializer ... ok
+test runtime::tests::direct_dispatch_writes_once_without_the_vec_growth_path ... ok
+test runtime::tests::dispatch_preserves_live_input_and_lifo_output_ownership ... ok
+test runtime::tests::input_copy_preserves_bytes_and_live_bounds_at_chunk_boundaries ... ok
+test runtime::tests::ten_thousand_wallet_sized_outputs_remove_observed_vec_growth_and_copy ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running unittests src/lib.rs (target/debug/deps/avm_procurement_council-66a4b35153c6fb79)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/regressions.rs (target/debug/deps/regressions-e6fff6baccd430a2)
+
+running 47 tests
+test codec_roundtrip ... ok
+test create_requires_useful_deadline ... ok
+test cancellation_and_expiry_remain_available_during_pause ... ok
+test deployment_requires_council_member ... ok
+test corrupt_state_and_noncanonical_padding_are_rejected ... ok
+test commitments_reserve_budget_and_prevent_overbooking ... ok
+test deposits_are_additive_and_checked ... ok
+test callback_without_pending_is_rejected ... ok
+test deposits_require_council_and_exact_currency ... ok
+test cancellation_requires_quorum_and_releases_only_unpaid_budget ... ok
+test deadline_prevents_payment_even_if_approved ... ok
+test duplicate_vote_cannot_reach_threshold ... ok
+test dispatch_is_pending_until_callback_not_immediately_spent ... ok
+test execute_checks_actual_account_balance ... ok
+test expiry_boundary_releases_reservation_and_cannot_repeat ... ok
+test extra_vote_does_not_extend_existing_delay ... ok
+test failed_attempt_receipt_capacity_stops_before_new_outbound ... ok
+test invalid_milestones_and_arithmetic_overflow_reject ... ok
+test failed_callback_requires_exact_refund_and_preserves_approval ... ok
+test fresh_pause_invalidates_partial_resume ... ok
+test maximum_state_remains_bounded_and_roundtrips ... ok
+test invalid_payload_lengths_and_unknown_methods_have_no_effects ... ok
+test five_member_council_can_require_all_five_distinct_votes ... ok
+test orders_require_separate_vendor_and_same_dapp_receiver ... ok
+test outbound_fee_reserve_cannot_spend_principal_or_exceed_shell_balance ... ok
+test full_three_stage_journey_and_closure ... ok
+test revision_clears_votes_and_rejects_stale_approval ... ok
+test order_capacity_and_ids_are_not_reused ... ok
+test pending_blocks_retry_and_other_money_mutations ... ok
+test revocation_below_quorum_resets_delay ... ok
+test pending_permits_pause_status_and_authenticated_settlement ... ok
+test same_delivery_cannot_be_resubmitted ... ok
+test pause_requires_member_and_resume_requires_quorum ... ok
+test threshold_and_members_are_checked ... ok
+test threshold_starts_delay_and_boundary_is_inclusive ... ok
+test success_must_not_refund_principal ... ok
+test successful_callback_advances_only_current_stage ... ok
+test settled_causal_hash_cannot_settle_retry ... ok
+test timestamp_and_revision_overflow_are_rejected_without_effects ... ok
+test unexpected_value_does_not_donate_or_mutate ... ok
+test unused_config_slots_must_be_zero ... ok
+test vendor_is_only_submitter_and_stages_are_sequential ... ok
+test topup_accepts_only_positive_shell_and_is_allowed_during_pending ... ok
+test wrong_source_or_altered_receipt_cannot_settle ... ok
+test votes_require_signer_and_exact_delivery ... ok
+test deterministic_mixed_operations_preserve_budget_or_are_effect_free ... ok
+test corrupted_full_state_never_panics_on_single_byte_mutations ... ok
+
+test result: ok. 47 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running unittests src/lib.rs (target/debug/deps/avm_procurement_receiver-72dfeed0e35dbced)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/receiver.rs (target/debug/deps/receiver-e4e76fa1ac632f76)
+
+running 10 tests
+test binding_is_owner_only_and_one_time ... ok
+test accepts_exact_principal_and_echoes_receipt ... ok
+test cumulative_balance_overflow_rejects_atomically ... ok
+test deliberate_failure_has_no_state_or_acknowledgement ... ok
+test unbound_destination_rejects ... ok
+test exact_currency_and_amount_are_required ... ok
+test malformed_receipts_and_state_padding_reject ... ok
+test externally_spoofed_receive_rejects ... ok
+test wrong_source_and_missing_request_are_rejected ... ok
+test duplicate_and_stale_attempts_reject ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests avm_contract_sdk
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests avm_procurement_council
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests avm_procurement_receiver
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

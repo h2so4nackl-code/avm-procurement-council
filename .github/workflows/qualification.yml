@@ -1,0 +1,41 @@
+name: AVM SDK 0.3.0 qualification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qualification:
+    name: Rust and real AVM journeys
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install pinned Rust toolchain
+        run: rustup toolchain install 1.93.0 --profile minimal --component rustfmt --component clippy --target wasm32-unknown-unknown
+      - name: Install and verify immutable official SDK 0.3.0
+        run: python3 scripts/setup_sdk.py
+      - name: Run complete qualification
+        run: bash scripts/check.sh
+      - name: Preserve test receipts and contract triples
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: avm-qualification-${{ github.sha }}
+          path: |
+            evidence/
+            artifacts/
+          if-no-files-found: warn
+          retention-days: 14
