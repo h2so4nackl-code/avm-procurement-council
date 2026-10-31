@@ -65,8 +65,11 @@ reproducibility. No WASM postprocessor or optimizer is necessary.
 
 ## Verified result
 
-The receipts below are local qualification. Hosted CI has not run yet; the
-included workflow is ready to run after repository publication.
+The committed receipts below record local qualification. Hosted qualification also
+passed on [`e5e59d0`](https://github.com/h2so4nackl-code/avm-procurement-council/commit/e5e59d0095159d75258e12ffbdf6a95db5752737):
+[GitHub Actions run 41153010473](https://github.com/h2so4nackl-code/avm-procurement-council/actions/runs/41153010473).
+The workflow checks Rust tests, strict Clippy, official reproducible builds,
+canonical IDs, both real AVM stand journeys and replay.
 
 The included evidence records **57 project tests + 9 inherited SDK unit tests**,
 clean strict Clippy, official contract builds, canonical ABI identifier checks,

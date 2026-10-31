@@ -48,6 +48,6 @@ review și eventuală includere în SDK.
 Este un exemplu funcțional pentru suita SDK, cu limite intenționate: 8 comenzi
 pe durata contractului, 64 încercări, fără migrare, retragere generală sau
 recuperare automată pentru un callback pierdut. Nu reprezintă audit ori validare
-pentru custodia fondurilor reale. Workflow-ul `.github/workflows/qualification.yml` este pregătit să ruleze aceeași suită după publicarea pe GitHub; CI-ul găzduit încă nu a rulat.
+pentru custodia fondurilor reale. Workflow-ul `.github/workflows/qualification.yml` a trecut și pe GitHub, pe commitul `e5e59d0`: rularea 41153010473.
 
-Arhiva conține și `git-history.bundle`, un export al istoricului Git local.
+Arhiva de livrare conține și `git-history.bundle`, un export al istoricului Git local.
